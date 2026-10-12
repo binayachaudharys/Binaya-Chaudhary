@@ -1,0 +1,8 @@
+node_modules
+.next
+out
+build
+*.log
+*.tsbuildinfo
+.DS_Store
+Binaya Chaudhary - Resume.pdf
