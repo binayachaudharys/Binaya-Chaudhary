@@ -3,6 +3,8 @@
 Personal portfolio for Binaya Chaudhary, a Shopify app developer and full-stack
 engineer based in Bhaktapur, Nepal. Built with Next.js and TypeScript.
 
+Visit the live portfolio: [binayachaudhary04.com.np](https://binayachaudhary04.com.np).
+
 ## Run locally
 
 ```bash

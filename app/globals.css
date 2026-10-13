@@ -70,12 +70,41 @@ a {
 }
 
 .wordmark {
-  font-size: 19px;
-  font-weight: 800;
-  letter-spacing: -1.5px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
 }
 
-.wordmark span,
+.brand-symbol {
+  display: block;
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+}
+
+.brand-name {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 5px;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.brand-name-first {
+  font-size: 15px;
+  font-weight: 800;
+  letter-spacing: -0.035em;
+}
+
+.brand-name-last {
+  color: #d5d8d3;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
 .hero h1 span,
 .about h2 span,
 .section-heading h2 span,

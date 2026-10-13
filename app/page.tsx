@@ -73,13 +73,50 @@ function ArrowIcon() {
   );
 }
 
+function BrandMark() {
+  return (
+    <>
+      <svg className="brand-symbol" aria-hidden="true" viewBox="0 0 48 48" fill="none">
+        <defs>
+          <linearGradient id="brand-tile" x1="5" y1="3" x2="43" y2="46" gradientUnits="userSpaceOnUse">
+            <stop stopColor="#242927" />
+            <stop offset="1" stopColor="#111413" />
+          </linearGradient>
+          <linearGradient id="brand-orbit" x1="13" y1="11" x2="37" y2="38" gradientUnits="userSpaceOnUse">
+            <stop stopColor="#ff7965" />
+            <stop offset="1" stopColor="#d9342b" />
+          </linearGradient>
+        </defs>
+        <path
+          d="M14 1.5h20A12.5 12.5 0 0 1 46.5 14v20A12.5 12.5 0 0 1 34 46.5H14A12.5 12.5 0 0 1 1.5 34V14A12.5 12.5 0 0 1 14 1.5Z"
+          fill="url(#brand-tile)"
+          stroke="#454b47"
+        />
+        <path d="M35.6 13.1a15.4 15.4 0 1 0 1.1 20.8" stroke="url(#brand-orbit)" strokeWidth="3.2" strokeLinecap="round" />
+        <path
+          d="M15.5 12.5v23m0-22.5h8.2a5.8 5.8 0 0 1 0 11.6h-8.2m0 0h9a5.95 5.95 0 0 1 0 11.9h-9"
+          stroke="#f4f0e8"
+          strokeWidth="3.1"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+        <path d="m36.9 9.2 1.2 2.4 2.4 1.2-2.4 1.2-1.2 2.4-1.2-2.4-2.4-1.2 2.4-1.2 1.2-2.4Z" fill="#ff7965" />
+      </svg>
+      <span className="brand-name" aria-hidden="true">
+        <span className="brand-name-first">Binaya</span>
+        <span className="brand-name-last">Chaudhary</span>
+      </span>
+    </>
+  );
+}
+
 export default function Home() {
   return (
     <>
       <header className="site-header">
         <div className="shell nav">
           <a className="wordmark" href="#home" aria-label="Binaya Chaudhary, home">
-            BC<span>.</span>
+            <BrandMark />
           </a>
           <nav aria-label="Main navigation">
             <a href="#about">About</a>
@@ -301,7 +338,9 @@ export default function Home() {
 
       <footer className="site-footer">
         <div className="shell footer-inner">
-          <a className="wordmark" href="#home" aria-label="Back to top">BC<span>.</span></a>
+          <a className="wordmark" href="#home" aria-label="Binaya Chaudhary, back to top">
+            <BrandMark />
+          </a>
           <p>Designed & built by Binaya Chaudhary · Bhaktapur, Nepal</p>
           <a href="#home">Back to top ↑</a>
         </div>

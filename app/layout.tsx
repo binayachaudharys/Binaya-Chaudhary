@@ -12,11 +12,11 @@ export const metadata: Metadata = {
       }
     : {}),
   title: {
-    default: "Binaya Chaudhary | Shopify App Developer & Portfolio",
+    default: "Binaya Chaudhary | Official Portfolio & Web Developer",
     template: "%s | Binaya Chaudhary",
   },
   description:
-    "Official personal portfolio of Binaya Chaudhary, full-time web and Shopify application developer. Explore projects, contact details, and tech stack.",
+    "Binaya Chaudhary is a Shopify App Developer based in Nepal. Explore portfolio projects, tech stack, and contact details.",
   verification: {
     google: "XF4AUfWk1Y4tL-B9aGEhvuROEI9T5yu7ML-fUu3OCfE",
   },
@@ -39,16 +39,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: "profile",
     locale: "en_US",
-    title: "Binaya Chaudhary | Shopify App Developer & Portfolio",
+    title: "Binaya Chaudhary | Official Portfolio & Web Developer",
     description:
-      "Official personal portfolio of Binaya Chaudhary, full-time web and Shopify application developer. Explore projects, contact details, and tech stack.",
+      "Binaya Chaudhary is a Shopify App Developer based in Nepal. Explore portfolio projects, tech stack, and contact details.",
     siteName: "Binaya Chaudhary",
   },
   twitter: {
     card: "summary",
     title: "Binaya Chaudhary | Shopify App Developer",
     description:
-      "Official personal portfolio of Binaya Chaudhary, full-time web and Shopify application developer.",
+      "Binaya Chaudhary is a Shopify App Developer based in Nepal. Explore portfolio projects, tech stack, and contact details.",
   },
   robots: {
     index: true,
