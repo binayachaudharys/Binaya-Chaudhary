@@ -14,8 +14,8 @@ Open [http://localhost:3000](http://localhost:3000).
 
 ## Production build
 
-Set `NEXT_PUBLIC_SITE_URL` to the public HTTPS URL before building. This value
-is used for canonical metadata and the sitemap.
+The canonical URL and sitemap default to `https://binayachaudhary04.com.np`.
+Set `NEXT_PUBLIC_SITE_URL` only if deploying under a different public URL.
 
 ```bash
 npm run build

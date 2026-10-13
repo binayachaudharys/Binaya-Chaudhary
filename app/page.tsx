@@ -97,10 +97,11 @@ export default function Home() {
         <section className="hero section-shell" id="home">
           <div className="hero-copy">
             <p className="eyebrow"><span className="status-dot" /> Shopify app developer · Nepal</p>
-            <h1>I build useful things for the <span>web.</span></h1>
+            <h1>Binaya Chaudhary</h1>
             <p className="hero-intro">
-              I&apos;m Binaya Chaudhary, a Shopify app developer and full-stack engineer
-              creating thoughtful commerce experiences and dependable web products.
+              I build useful things for the web as a Shopify app developer and
+              full-stack engineer, creating thoughtful commerce experiences and
+              dependable web products.
             </p>
             <div className="hero-actions">
               <a className="button button--primary" href="#work">

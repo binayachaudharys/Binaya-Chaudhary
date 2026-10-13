@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL;
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://binayachaudhary04.com.np";
 
 export const metadata: Metadata = {
   ...(siteUrl
@@ -11,11 +12,14 @@ export const metadata: Metadata = {
       }
     : {}),
   title: {
-    default: "Binaya Chaudhary | Shopify App Developer & Full-Stack Engineer",
+    default: "Binaya Chaudhary | Shopify App Developer & Portfolio",
     template: "%s | Binaya Chaudhary",
   },
   description:
-    "Meet Binaya Chaudhary, a Shopify app developer and full-stack engineer in Bhaktapur, Nepal. Explore Shopify apps, React, Remix, Laravel, and web projects.",
+    "Official personal portfolio of Binaya Chaudhary, full-time web and Shopify application developer. Explore projects, contact details, and tech stack.",
+  verification: {
+    google: "XF4AUfWk1Y4tL-B9aGEhvuROEI9T5yu7ML-fUu3OCfE",
+  },
   keywords: [
     "Binaya Chaudhary",
     "Shopify app developer Nepal",
@@ -35,16 +39,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: "profile",
     locale: "en_US",
-    title: "Binaya Chaudhary | Shopify App Developer & Full-Stack Engineer",
+    title: "Binaya Chaudhary | Shopify App Developer & Portfolio",
     description:
-      "Shopify app developer and full-stack engineer in Bhaktapur, Nepal. Explore selected projects and experience.",
+      "Official personal portfolio of Binaya Chaudhary, full-time web and Shopify application developer. Explore projects, contact details, and tech stack.",
     siteName: "Binaya Chaudhary",
   },
   twitter: {
     card: "summary",
     title: "Binaya Chaudhary | Shopify App Developer",
     description:
-      "Shopify app developer and full-stack engineer based in Bhaktapur, Nepal.",
+      "Official personal portfolio of Binaya Chaudhary, full-time web and Shopify application developer.",
   },
   robots: {
     index: true,
@@ -68,11 +72,14 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "Person",
     name: "Binaya Chaudhary",
-    jobTitle: "Shopify App Developer and Full-Stack Engineer",
+    jobTitle: "Shopify App Developer",
     description:
       "Shopify app developer and full-stack web engineer based in Bhaktapur, Nepal.",
     ...(siteUrl ? { url: siteUrl } : {}),
-    sameAs: ["https://www.linkedin.com/in/binayachaudhary/"],
+    sameAs: [
+      "https://github.com/binayachaudharys",
+      "https://www.linkedin.com/in/binayachaudhary/",
+    ],
     address: {
       "@type": "PostalAddress",
       addressLocality: "Bhaktapur",
@@ -92,13 +99,15 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body>
+      <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(personSchema).replace(/</g, "\\u003c"),
           }}
         />
+      </head>
+      <body>
         {children}
       </body>
     </html>
